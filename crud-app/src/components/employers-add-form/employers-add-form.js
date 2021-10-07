@@ -1,6 +1,6 @@
-import './employees-add-form.css';
+import './employers-add-form.css';
 
-const EmployeesAddForm = () => {
+const EmployersAddForm = () => {
     return (
         <div className="app-add-form">
             <h3>Добавьте нового сотрудника</h3>
@@ -14,10 +14,10 @@ const EmployeesAddForm = () => {
                     placeholder="З/П в $?" />
 
                 <button type="submit"
-                        className="btn btn-outline-light">Добавить</button>
+                    className="btn btn-outline-light">Добавить</button>
             </form>
         </div>
     )
 }
 
-export default EmployeesAddForm;
+export default EmployersAddForm;

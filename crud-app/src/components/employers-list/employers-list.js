@@ -1,15 +1,15 @@
-import EmployeesListItem from "../employees-list-item/employees-list-item";
+import EmployersListItem from "../employers-list-item/employers-list-item";
 
-import './employees-list.css';
+import './employers-list.css';
 
-const EmployeesList = () => {
+const EmployersList = () => {
     return (
         <ul className="app-list list-group">
-            <EmployeesListItem/>
-            <EmployeesListItem/>
-            <EmployeesListItem/>
+            <EmployersListItem/>
+            <EmployersListItem/>
+            <EmployersListItem/>
         </ul>
     )
 }
 
-export default EmployeesList;
+export default EmployersList;
