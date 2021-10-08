@@ -23,7 +23,7 @@ function App() {
             <AppFilter/>
         </div>
                 
-        <EmployersList/>
+        <EmployersList data={data}/>
         <EmployersAddForm/>
         </div>
     );
