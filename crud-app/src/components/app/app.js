@@ -8,22 +8,27 @@ import EmployersAddForm from '../employers-add-form/employers-add-form';
 
 import './app.css';
 
-class App extends Component {
+function App() {
 
-  render() {
-    return(
-      <div className='app'>
-        <AppInfo />
+  const data = [
+    {name: 'Anton', salary: 1800},
+    {name: 'viyaleta', salary: 2800},
+    {name: 'Maksmilian', salary: 9800},
+    {name: 'Adrian', salary: 19800}
+  ];
 
-        <div className="search-panel">
-          <SearchPanel/>
-          <AppFilter/>
-        </div>
-        <EmployersList/>
-        <EmployersAddForm/>
+  return(
+    <div className='app'>
+      <AppInfo />
+
+      <div className="search-panel">
+        <SearchPanel/>
+        <AppFilter/>
       </div>
-    );
-  }
+      <EmployersList data={data}/>
+      <EmployersAddForm/>
+    </div>
+  );
 }
 
 export default App;
