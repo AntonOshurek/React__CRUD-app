@@ -4,9 +4,10 @@ import './employers-list.css';
 
 const EmployersList = ({data}) => {
 
-  const elements = data.map(item => {
+  const elements = data.map((item, i) => { //если с бэка не пришли id то можно поставить индекс
+    const {id, ...itemProps} = item; //если с бэка пришли, то деструкруризовать и назначить в атрибут key
     return (
-      <EmployersListItem {...item}/> //name={item.name} salary={item.salary} <= тоже самое!!!
+      <EmployersListItem  key={id} {...itemProps}/> //name={item.name} salary={item.salary} <= тоже самое!!!
     )
   });
 
