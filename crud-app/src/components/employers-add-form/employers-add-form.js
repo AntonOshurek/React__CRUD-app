@@ -5,16 +5,18 @@ import './employers-add-form.css';
 class EmployersAddForm extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       name: '',
-      salsry: '',
+      salary: '',
     }
   }
 
-  onValueChange = (e) => {
+  onValueChange = (evt) => {
     this.setState({
-      [e.target.name]: e.target.value
+      [evt.target.name]: evt.target.value
+      //[evt.target.name] - берём атрибут name из input и записываем значение value в state с
+      //таким же названием.
     })
   }
 
